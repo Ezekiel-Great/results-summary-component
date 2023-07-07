@@ -1,0 +1,207 @@
+
+*{
+    box-sizing: border-box; 
+    padding: 0; 
+    margin: 0;
+}
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+:root{
+--Light-red: hsl(0, 100%, 67%);
+--Orangey-yellow: hsl(39, 100%, 56%);
+--Green-teal: hsl(166, 100%, 37%);
+--Cobalt-blue: hsl(234, 85%, 45%);
+--Light-slate: hsl(252, 100%, 67%);
+--Light-royal: hsl(241, 81%, 54%);
+--Violet-blue: hsla(256, 72%, 46%, 1);
+--Persian-blue: hsla(241, 72%, 46%, 0);
+--White: hsl(0, 0%, 100%);
+--Pale-blue: hsl(221, 100%, 96%);
+--Light-lavender: hsl(241, 100%, 89%);
+--Dark-gray-blue: hsl(224, 30%, 27%);
+}
+.container{
+    display: flex; 
+    gap: 40px;
+    background-color: var(--White);
+    border-radius: 20px ;
+    box-shadow:  5px 5px 20px grey;
+}
+
+.container .left{
+    color: white;
+    background:linear-gradient(var(--Light-slate),var(--Light-royal));
+    text-align:center;
+    width: 375px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+}
+.left>h3{
+    margin-bottom: 30px;
+    color:var(--Light-lavender);
+    font-size: 2rem;
+}
+.left .center{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background:linear-gradient( var(--Violet-blue),var(--Persian-blue))  ;
+}
+.center h1{
+    font-size:70px;
+    font-weight: 800;
+}
+.center h3{
+   color:var(--Light-slate);
+   font-size: 1.75rem;
+   
+}
+
+.left h2{
+    font-weight: 700;
+    margin-bottom: 14px;
+    margin-top: 20px;
+    font-size: 3rem;
+}
+.left p{
+    max-width: 70%;
+    color:  hsl(240, 21%, 69%);
+    font-size: 1.65rem;
+    font-weight: 500;
+} 
+.container .right{
+    padding-top: 40px;
+    width: 325px; 
+}
+.right h3{
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+.right .react{
+    background-color: hsla(0, 100%, 67%, 0.1);
+    display: flex;
+    border-radius: 5px;
+    width: 87.5%;
+    padding: 16px;
+    margin-bottom: 18px;
+    justify-content: space-between;
+    align-items: center;
+}
+.right .score{
+    font-size: 1.5rem;
+}
+.title{
+    display: flex;
+    align-items: center;
+}
+.title h4{
+    font-size: 1.5rem;
+}
+.react h4{
+    color: hsl(0, 100%, 67%);
+    margin-left: 10px;
+    margin-right: 70px;
+}
+.right .memo{
+    background-color: hsla(39, 100%, 56%, 0.1);
+    display:flex;
+    border-radius: 5px;
+    width: 87.5%;
+    padding: 16px;
+    margin-bottom: 18px;
+    justify-content: space-between;
+    align-items: center;
+}
+.memo h4{
+    color: hsl(39, 100%, 56%);
+    margin-left: 10px;
+    margin-right: 70px;
+}
+.right .verb{
+    background-color: hsla(166, 100%, 37%, 0.1);
+    display: flex;
+    border-radius: 5px;
+    width: 87.5%;
+    padding: 16px;
+    margin-bottom: 18px;
+    justify-content: space-between;
+    align-items: center;
+}
+.verb h4{
+    color: hsl(166, 100%, 37%);
+    margin-left: 10px;
+    margin-right: 85px;
+}
+.right .visual{
+    background-color: hsla(234, 85%, 45%, 0.1);
+    display: flex;
+    border-radius: 5px;
+    width: 87.5%;
+    padding: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+.visual h4{
+    color: hsl(234, 85%, 45%);
+    margin-left: 10px;
+    margin-right: 85px;
+}
+.right button{
+    margin: 40px auto;
+    border-radius: 30px;
+    width: 87.5%;
+    padding: 15px;
+    border-style: none;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    background-color:hsl(224, 30%, 27%);
+    font-size: 1.5rem;
+    transition: width 1s ease-in-out;
+} 
+button:hover ,button:active{
+   background-color:  hsl(252, 100%, 67%);
+   transform: rotateX(-180deg);
+   width: 92.5%;
+}
+
+
+@media(max-width: 600px){
+body{
+    height: auto;
+}
+.container{
+    flex-direction: column;
+    box-shadow: none;
+    align-items: center;
+}
+
+.right .react,.right .memo, .right .verb,
+ .right .visual, .right button  {
+    width: 100%;
+}
+.container .left{
+    border-radius: 0 0 20px 20px;
+    width: 100%;
+}
+.container .right{
+    border-radius: none;
+    width: 85%;
+}
+.left p{
+    padding-bottom: 30px;
+    font-size: 1.35rem;
+} 
+
+}
