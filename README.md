@@ -43,3 +43,4 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 - Frontend Mentor - [@Ezekiel-Great](https://www.frontendmentor.io/profile/Ezekiel-Great)
 - Twitter - [@yeshua_codeit](https://www.twitter.com/yeshua_codeit )
+# results-summary-component
